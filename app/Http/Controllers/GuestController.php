@@ -52,11 +52,11 @@ class GuestController extends Controller
             'access' => '1',
         ];
 
-        $addProduk = $this->eloquentTask->insertTasks('Users', $dataInsert);
+        $addProduk = $this->eloquentTask->insertTasks('users', $dataInsert);
         if(!$addProduk){
             return "<script LANGUAGE='JavaScript'> window.alert('Somthing Failed.'); window.location.href='".URL::previous()."'; </script>";
         }
-        
+
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password, 'access' => '1'])) {
             $request->session()->regenerate();
  
