@@ -1,0 +1,2 @@
+import 'flowbite';
+require('./bootstrap');
