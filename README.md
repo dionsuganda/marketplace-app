@@ -62,3 +62,12 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Petunjuk Penggunaan
+- Clone aplikasi marketplace ini menggunakan perintah git clone https://github.com/dionsuganda/marketplace-app.git.
+- Setelah berhasil melakukan clone aplikasi, jalankan perintah composer install (Pastikan composer sudah terinstall pada komputer anda).
+- Setting file .env agar terhubung ke database anda dengan nama database indocyber_e_commerce.
+- Jalankan perintah, php artisan migrate untuk membuat struktur tabel yang dibutuhkan.
+- Apabila berhasil melakukan migrations, jalankan perintah php artisan server
+- Jalankan juga perintah npm run dev && npm run watch pada terminal untuk mengaktifkan UI (Pastikan anda sudah menginstall Node.js).
+- Program akan berjalan pada http://localhost:8000/ (Pastikan port tersebut tidak ada yang menggunakannya).
